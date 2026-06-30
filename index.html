@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pampas Beef S.A.</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  body {
+    background: #111;
+    color: #f0ebe0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .logo-area {
+    text-align: center;
+    padding: 30px 0 20px;
+    border-bottom: 2px solid #8B1A1A;
+    margin-bottom: 24px;
+  }
+
+  .logo-area svg { width: 70px; height: 70px; }
+
+  .logo-area h1 {
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    color: #f0ebe0;
+    margin-top: 10px;
+  }
+
+  .logo-area p {
+    font-size: 0.7rem;
+    color: #B8952A;
+    letter-spacing: 2px;
+    margin-top: 4px;
+  }
+
+  h2 {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8B1A1A;
+    margin-bottom: 12px;
+  }
+
+  .seccion {
+    margin-bottom: 28px;
+  }
+
+  /* MAPA */
+  .mapa-embed {
+    width: 100%;
+    height: 260px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .planta-info {
+    background: #1c1c1c;
+    border-left: 3px solid #8B1A1A;
+    padding: 12px 14px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+  }
+
+  .planta-info h3 {
+    font-size: 0.85rem;
+    color: #B8952A;
+    margin-bottom: 4px;
+  }
+
+  .planta-info p {
+    font-size: 0.75rem;
+    color: #aaa;
+    line-height: 1.5;
+  }
+
+  /* PRODUCTOS */
+  .producto {
+    background: #1c1c1c;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .producto .icon {
+    font-size: 2.2rem;
+    flex-shrink: 0;
+  }
+
+  .producto h3 {
+    font-size: 0.9rem;
+    color: #f0ebe0;
+    margin-bottom: 4px;
+  }
+
+  .producto p {
+    font-size: 0.72rem;
+    color: #888;
+    line-height: 1.5;
+  }
+
+  .producto .tag {
+    display: inline-block;
+    background: rgba(139,26,26,0.3);
+    border: 1px solid #8B1A1A;
+    color: #B8952A;
+    font-size: 0.6rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-top: 6px;
+    letter-spacing: 1px;
+  }
+
+  /* WHATSAPP */
+  .wsp-btn {
+    display: block;
+    background: #25D366;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .wsp-sub {
+    text-align: center;
+    font-size: 0.68rem;
+    color: #555;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 0 10px;
+    font-size: 0.65rem;
+    color: #444;
+    border-top: 1px solid #222;
+    margin-top: 10px;
+  }
+
+  footer span { color: #B8952A; }
+</style>
+</head>
+<body>
+
+<!-- LOGO -->
+<div class="logo-area">
+  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="47" fill="#3a1a08" stroke="#B8952A" stroke-width="2.5"/>
+    <ellipse cx="50" cy="55" rx="21" ry="25" fill="#F4EFE6"/>
+    <ellipse cx="23" cy="40" rx="8" ry="12" fill="#5a3018" transform="rotate(-15 23 40)"/>
+    <ellipse cx="77" cy="40" rx="8" ry="12" fill="#5a3018" transform="rotate(15 77 40)"/>
+    <path d="M28 30 Q17 11 31 17" stroke="#B8952A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M72 30 Q83 11 69 17" stroke="#B8952A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="40" cy="48" r="4" fill="#1A1008"/>
+    <circle cx="60" cy="48" r="4" fill="#1A1008"/>
+    <circle cx="41.5" cy="46.5" r="1.2" fill="white"/>
+    <circle cx="61.5" cy="46.5" r="1.2" fill="white"/>
+    <ellipse cx="50" cy="63" rx="11" ry="8" fill="#c89070"/>
+    <circle cx="45" cy="62" r="2.5" fill="#7a4a28"/>
+    <circle cx="55" cy="62" r="2.5" fill="#7a4a28"/>
+  </svg>
+  <h1>PAMPAS BEEF</h1>
+  <p>BUENOS AIRES · ARGENTINA · DESDE 1998</p>
+</div>
+
+<!-- UBICACIÓN -->
+<div class="seccion">
+  <h2>📍 Dónde estamos</h2>
+
+  <iframe
+    class="mapa-embed"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.0!2d-60.09!3d-33.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQ1JzM2LjAiUyA2MMKwMDUnMjMuOSJX!5e0!3m2!1ses!2sar!4v1234567890"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+
+  <div class="planta-info">
+    <h3>🏭 Planta Principal — Pérez Millán, Bs.As.</h3>
+    <p>Planta de faena y procesamiento principal.<br>Capacidad: 1.200 cabezas/día · 850 empleados<br>Certificación SENASA</p>
+  </div>
+
+  <div class="planta-info">
+    <h3>🏭 Planta Sur — Abasto, La Plata</h3>
+    <p>Planta de distribución y cortes para minoristas.<br>Especializada en mercado local y food service.</p>
+  </div>
+</div>
+
+<!-- PRODUCTOS -->
+<div class="seccion">
+  <h2>🥩 Nuestros productos</h2>
+
+  <div class="producto">
+    <div class="icon">🥩</div>
+    <div>
+      <h3>Bife de Chorizo</h3>
+      <p>Corte premium del lomo bajo. Maduración 21 días al vacío.</p>
+      <span class="tag">EXPORTACIÓN · CUOTA HILTON</span>
+    </div>
+  </div>
+
+  <div class="producto">
+    <div class="icon">🍖</div>
+    <div>
+      <h3>Tira de Asado</h3>
+      <p>Producto estrella del mercado interno. Empaque con atmósfera modificada.</p>
+      <span class="tag">MERCADO INTERNO</span>
+    </div>
+  </div>
+
+  <div class="producto">
+    <div class="icon">🥓</div>
+    <div>
+      <h3>Carne Molida Especial</h3>
+      <p>Formulación 80/20. Para supermercados y restaurantes.</p>
+      <span class="tag">MINORISTA · FOOD SERVICE</span>
+    </div>
+  </div>
+
+  <div class="producto">
+    <div class="icon">📋</div>
+    <div>
+      <h3>Subproductos</h3>
+      <p>Cueros, sebo y vísceras para industria farmacéutica y química.</p>
+      <span class="tag">INDUSTRIA</span>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACTO -->
+<div class="seccion">
+  <h2>📞 Contacto</h2>
+  <a class="wsp-btn" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20Pampas%20Beef">
+    💬 Hacer un pedido por WhatsApp
+  </a>
+  <p class="wsp-sub">Respondemos de lunes a viernes de 8 a 17hs</p>
+</div>
+
+<footer>
+  <span>PAMPAS BEEF S.A.</span> · Buenos Aires, Argentina<br>
+  Expo Agro-Técnica · 2025
+</footer>
+
+</body>
+</html>
